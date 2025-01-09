@@ -1,0 +1,144 @@
+/*  Основной блок*/
+.message {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 800px;
+    height: 550px;
+    background-color: #c9bfbf36;
+    border: 1px solid #D3D3D3;
+
+}
+/*  Чаты */
+.message__chats {
+    position: absolute;
+    margin: auto;
+    width: 200px;
+    height:34.5rem;
+    margin-top: 2px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #D3D3D3;
+}
+
+
+/*  Сообщения  */
+.message__title {
+    margin: 0;
+    margin-top: 1rem;
+    text-align: center;
+    
+
+}
+/* Был в сети */
+.message__title-two {
+    position: absolute;
+    margin: 0;
+    margin-left: 15rem;
+    margin-bottom: 31rem;
+    justify-content: center;
+    text-align: center;
+    
+}
+/* Плашка был в сети*/
+.message__online {
+    justify-content: top;
+    align-items: top;
+    margin: 0;
+    margin-left: 12.5rem;
+    margin-bottom: 31.4rem;
+    height: 3rem;
+    width: 75%;
+    border-style: groove;
+    background-color: white;
+    border: 1px solid #D3D3D3; /* Легкая граница */
+}
+/* Принятие сообщений */
+.message_input {
+    position: absolute;
+    width: 75%;
+    height: 3rem;
+    margin-left: 12.5rem;
+    margin-top: 31.6rem;
+    border: none;
+    border: 1px solid #D3D3D3; /* Легкая граница */
+
+    
+}
+
+/*  */
+.message_input:focus {
+    outline: none; /* Убирает стандартную подсветку при фокусе */
+    background-color: #fff; /* Белый фон при фокусе */
+    box-shadow: none; /* Убирает тень при фокусе */
+}
+/* Поиск чатов */
+.search_input {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: auto;
+    margin-top: auto;
+    right: 100px;
+    width: 200px;
+    height:34.5rem;
+    background-color: black;
+    bottom: 100px;
+    border-radius: 10px;
+    border-style: groove;
+}
+
+.message__send {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    top: 10px;
+}
+
+
+/* Мобильная адаптация для меньших экранов */
+@media (max-width: 768px) {
+    .message {
+        width: 90%; /* Уменьшаем ширину, чтобы она подстраивалась под экран */
+        height: 30rem; /* Автоматическая высота, чтобы вместить содержимое */
+      
+    }
+
+    .message_input {
+        width: 30rem; /* Ввод текста на всю ширину */
+
+    }
+
+    .message__title {
+        font-size: 1.5rem; /* Уменьшаем размер шрифта заголовка */
+    }
+
+    .message__chats {
+        height: 30rem;
+        width: 11rem;
+    }
+    .message__online {
+        width: 25rem;
+        margin-top: 4.4rem;
+        margin-left: 11rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .message {
+        padding: 15px; /* Еще меньше отступов на очень маленьких экранах */
+    }
+
+    .message_input {
+        width: 100%; /* Чтобы поле ввода не вылезало за пределы */
+        height: 45px; /* Меньше высоты для ввода на мобильных */
+    }
+
+    .message__title {
+        font-size: 1.2rem; /* Еще меньше размер шрифта на маленьких экранах */
+    }
+}
