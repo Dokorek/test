@@ -134,31 +134,31 @@ button {
     background-position: center; /* Центрирует изображение */
 }
 .header__notification {
-    background-image: url('/images/svg/notification.svg');
+    background-image: url('notification.svg');
 
 }
 
 .header__notification:hover {
-    background-image: url('/images/svg/notificationred.svg');
+    background-image: url('notificationred.svg');
    
 }
 .header__dollar {
-    background-image: url('/images/svg/dollar.svg');
+    background-image: url('dollar.svg');
 
 }
 
 .header__dollar:hover {
-    background-image: url('/images/svg/dollarred.svg');
+    background-image: url('dollarred.svg');
 
 }
 
 .header__message  {
-    background-image: url('/images/svg/message.svg');
+    background-image: url('message.svg');
 
 }
 
 .header__message:hover {
-    background-image: url('/images/svg/messagered.svg');
+    background-image: url('messagered.svg');
 
 }
 
